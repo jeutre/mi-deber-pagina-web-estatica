@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Café Caracol - Experiencia Sensorial</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Café Caracol</h1>
+    <p>Una experiencia sensorial de café de especialidad</p>
+    <button id="btnToggleTheme" aria-label="Cambiar tema">Modo oscuro</button>
+  </header>
+
+  <main>
+
+    <section class="gallery">
+      <img src="https://drive.google.com/thumbnail?id=1mj4i898IjsJGYtxsIIafBkKVRjyktQEe" alt="Taza de café humeante" />
+      <img src="https://drive.google.com/thumbnail?id=1_W8RRQbG9ZwVbsOJH5oCNLOhwroGPsAZ" alt="Interior cafetería" />
+      <img src="https://drive.google.com/thumbnail?id=1oAV3rFlQ3-R-TYYwDkU4UTFsL-keJ-Vb" alt="Otra vista de cafetería" />
+      <img src="https://drive.google.com/thumbnail?id=1kCy7g00h0SMY723FmivrTpzEIRHLfoNF" alt="Granos de café" />
+    </section>
+
+    <section class="videos" aria-label="Videos de café y ambiente">
+      <h2>Ambiente Café Caracol</h2>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VJH_DI_-xJQ" title="Video 1 - Café" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Cu0thff8CrE" title="Video 2 - Café" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>Sobre el Café de Especialidad</h2>
+      <p>
+        El café de especialidad se cultiva con dedicación y pasión, prestando atención a cada detalle desde la semilla hasta la taza.  
+        En <strong>Café Caracol</strong> queremos que disfrutes no solo del sabor, sino de toda la experiencia sensorial: los aromas intensos, la textura sedosa y el arte que hay detrás de cada preparación.  
+        Descubre cómo el origen, la altura y el proceso influyen en la calidad única de cada grano.
+      </p>
+      <p>
+        Aprende más sobre el café de especialidad en sitios reconocidos como 
+        <a href="https://specialtycoffeeassociation.org" target="_blank" class="external-link" rel="noopener">Specialty Coffee Association</a>  
+        y 
+        <a href="https://www.coffeeresearch.org" target="_blank" class="external-link" rel="noopener">Coffee Research Institute</a>.
+      </p>
+    </section>
+
+    <section class="mission-vision">
+      <div class="mission">
+        <h2>Misión</h2>
+        <p>
+          Brindar una experiencia única de café de especialidad, promoviendo la cultura cafetera con calidad, sostenibilidad y atención personalizada, para satisfacer a nuestros clientes y apoyar a los productores locales.
+        </p>
+      </div>
+      <div class="vision">
+        <h2>Visión</h2>
+        <p>
+          Ser reconocidos como la cafetería líder en experiencias sensoriales y productos de alta calidad, innovando y contribuyendo al desarrollo sostenible de la comunidad cafetera.
+        </p>
+      </div>
+    </section>
+
+    <section class="products">
+      <h2>Productos que ofrecemos</h2>
+      <div class="product-list">
+        <article class="product-card">
+          <img src="https://drive.google.com/thumbnail?id=1mj4i898IjsJGYtxsIIafBkKVRjyktQEe" alt="Taza de café humeante" />
+          <h3>Café Tostado Premium</h3>
+          <p>Granos seleccionados de alta calidad, tostados para resaltar su aroma y sabor único.</p>
+        </article>
+        <article class="product-card">
+          <img src="https://drive.google.com/thumbnail?id=1_W8RRQbG9ZwVbsOJH5oCNLOhwroGPsAZ" alt="Interior cafetería" />
+          <h3>Café Espresso Artesanal</h3>
+          <p>Preparado por expertos baristas con técnicas artesanales para un sabor intenso y equilibrado.</p>
+        </article>
+        <article class="product-card">
+          <img src="https://drive.google.com/thumbnail?id=1oAV3rFlQ3-R-TYYwDkU4UTFsL-keJ-Vb" alt="Otra vista de cafetería" />
+          <h3>Café de Especialidad en Taza</h3>
+          <p>Disfruta de diferentes perfiles de sabor, desde frutales hasta achocolatados, en cada taza.</p>
+        </article>
+        <article class="product-card">
+          <img src="https://drive.google.com/thumbnail?id=1kCy7g00h0SMY723FmivrTpzEIRHLfoNF" alt="Granos de café" />
+          <h3>Plantas y Accesorios</h3>
+          <p>Ofrecemos plantas de café y accesorios para que vivas la experiencia desde la raíz.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="reservations" aria-label="Formulario de reservaciones de mesa">
+      <h2>Reservar una Mesa</h2>
+      <form action="#" method="POST" id="reservationForm" novalidate>
+        <label for="name">Nombre completo</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre completo" required minlength="3" />
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+
+        <label for="date">Fecha de reserva</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="time">Hora de reserva</label>
+        <input type="time" id="time" name="time" required />
+
+        <label for="people">Número de personas</label>
+        <select id="people" name="people" required>
+          <option value="" disabled selected>Selecciona</option>
+          <option value="1">1 persona</option>
+          <option value="2">2 personas</option>
+          <option value="3">3 personas</option>
+          <option value="4">4 personas</option>
+          <option value="5">5 personas</option>
+          <option value="6">6 personas</option>
+          <option value="7">7 personas</option>
+          <option value="8">8 personas</option>
+        </select>
+
+        <label for="notes">Notas adicionales (opcional)</label>
+        <textarea id="notes" name="notes" placeholder="Por ejemplo: solicitud especial, alergias, etc." rows="3"></textarea>
+
+        <button type="submit">Enviar Reservación</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Café Caracol | Todos los derechos reservados
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
